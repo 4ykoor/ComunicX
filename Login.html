@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+      background-color: #f0f0f0;
+    }
+    h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+    input {
+      display: block;
+      margin: 10px auto;
+      padding: 10px;
+      width: 200px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>LOGIN</h2>
+  <form action="entrar.php" method="post">
+    <input type="text" name="nick" placeholder="NICK">
+    <input type="password" name="senha" placeholder="SENHA">
+    <button type="submit">ENTRA</button>
+  </form>
+</body>
+</html>
