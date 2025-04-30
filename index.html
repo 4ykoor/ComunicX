@@ -1,71 +1,83 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Xroom - Boas Vindas</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f1f1f1;
+      padding: 0;
+      background-color: #128C7E; /* cor estilo WhatsApp */
+      font-family: sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    .container {
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       height: 100vh;
+      padding: 20px;
     }
-    .logo {
-      font-size: 40px;
-      font-weight: bold;
-      margin-bottom: 10px;
+
+    img.logo {
+      width: 200px;
+      margin-bottom: 20px;
     }
-    .logo span:first-child {
-      color: white;
-      background: black;
-      padding: 5px 10px;
-      border-radius: 5px;
-    }
-    .logo span:last-child {
-      color: black;
-    }
+
     h1 {
-      margin: 10px 0;
+      font-size: 2em;
+      margin-bottom: 30px;
     }
-    .btn {
-      padding: 12px 30px;
-      margin: 10px;
-      font-size: 16px;
-      border: none;
-      border-radius: 8px;
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 40px;
+    }
+
+    .buttons button {
+      padding: 10px 30px;
+      border: 2px solid white;
+      background: transparent;
+      color: white;
+      font-weight: bold;
+      border-radius: 10px;
       cursor: pointer;
     }
-    .login {
-      background-color: #4CAF50;
-      color: white;
+
+    .lines {
+      width: 80%;
+      max-width: 400px;
     }
-    .register {
-      background-color: #2196F3;
-      color: white;
-    }
-    .desc {
-      margin-top: 20px;
-      color: #555;
-      text-align: center;
-      padding: 0 20px;
+
+    .line {
+      background-color: rgba(255, 255, 255, 0.2);
+      height: 10px;
+      border-radius: 5px;
+      margin: 8px 0;
     }
   </style>
 </head>
 <body>
-  <div class="logo">
-    <span>X</span><span>room</span>
-  </div>
-  <h1>Boas Vindas</h1>
-  <div>
-    <button class="btn login">Login</button>
-    <button class="btn register">Registrar</button>
-  </div>
-  <div class="desc">
-    <p>Conecte-se com seus amigos, compartilhe momentos e fique por dentro de tudo que rola.</p>
+  <div class="container">
+    <img src="logo.png" alt="Xroom Logo" class="logo" />
+    <h1>BOAS VINDAS</h1>
+    <div class="buttons">
+      <button onclick="location.href='login.html'">LOGIN</button>
+      <span>ou</span>
+      <button onclick="location.href='registro.html'">REGIST</button>
+    </div>
+    <div class="lines">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
   </div>
 </body>
 </html>
